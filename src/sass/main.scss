@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+$first-color: #3204D9;
+$second-color:#21D904;
+$background-color: #F2F2F2;
+
+
+h1{
+  font-family: 'Caveat';
+  color: white;
+}
+
+.header-container{
+  background-color: $first-color;
+}
