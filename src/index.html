@@ -2,29 +2,65 @@
 <html lang="FR-fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Veille tech</title>
-    <link rel="stylesheet" href="./sass/main.scss">
+    <link href="./sass/main.scss" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-container  ">
-            <div class="d-flex  justify-content-between">
-                <h1 class="">La veille techno</h1>
-                <div class="me-2 mt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42.938" height="39.733" viewBox="0 0 42.938 39.733">
-                        <g id="Composant_8_1" data-name="Composant 8 – 1" transform="translate(0.5 0.5)">
-                            <path id="Tracé_2" data-name="Tracé 2" d="M3,4H44.938V8.842H3ZM3,20.946H44.938v4.842H3ZM3,37.892H44.938v4.842H3Z" transform="translate(-3 -4)" fill="#fff" stroke="#3204d9" stroke-width="1"/>
-                        </g>
-                    </svg>
-                </div>
+<header>
+    <div class="header-container w-auto ">
+        <div class="d-flex  justify-content-between align-items-center">
+            <h1 class="display-1">La veille techno</h1>
+            <div class="hamburger" id="hamburger">
+                <svg height="40" viewBox="0 0 42.938 39.733" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <g data-name="Composant 8 – 1" id="Composant_8_1" transform="translate(0.5 0.5)">
+                        <path d="M3,4H44.938V8.842H3ZM3,20.946H44.938v4.842H3ZM3,37.892H44.938v4.842H3Z"
+                              data-name="Tracé 2"
+                              fill="#fff"
+                              id="Tracé_2" stroke="#3204d9" stroke-width="1" transform="translate(-3 -4)"/>
+                    </g>
+                </svg>
             </div>
         </div>
+        <div class="menu d-none d-flex justify-content-end " id="menu">
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
-    </header>
+<section class="home">
+    <div class="home-container container py-2">
+        <h2 class="display-2">Acceuil</h2>
+        <div class="home-intro ms-5">
+            <p>Ce blog est prévu pour les développeurs qui souhaitent se tenir informer en un coup d'oeil des dernières nouvelles dans le monde du numérique.</p>
+            <p>Ce blog références toutes les informations pertinantes dans les différentes catégories. Nous les avons défini de la facon suivante pour vous facilité la lecture:
+                <ul>
+                    <li>Code : comprend tous les nouveautées en matière de développement</li>
+                    <li>Systeme: comprend toutes les informations sur les différents systèmes d'expoitation</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</section>
 
+<div class="container">
+    <section class="show-articles">
 
-<script type= 'module' src="js/app.js"></script>
+    </section>
+    <section class="search">
+
+    </section>
+</div>
+<footer>
+
+</footer>
+<script src="js/app.js" type='module'></script>
 </body>
 </html>

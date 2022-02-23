@@ -1,17 +1,76 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
 
 //color set
-$first-color: #3204D9;
-$second-color:#21D904;
-$background-color: #F2F2F2;
+$first-color: #3204d9;
+$second-color: #21d904;
+$background-color: #f2f2f2;
 
-
-h1{
-  font-family: 'Caveat';
-  color: white;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header-container{
+h1,
+h2 {
+  font-family: Caveat;
+}
+
+h1 {
+  color: white;
+  margin-left: 250px;
+}
+
+h1,
+.hamburger {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hamburger {
+  margin-right: 250px;
+  padding-top: 10px;
+}
+
+#menu {
+  font-family: Arial;
+  color: white;
+  margin-right: 250px;
+ul {
+  display: grid;
+  gap: 15px;
+  li {
+    display: inline;
+    grid-row: 1;
+
+    a {
+      //border: solid 1px $second-color;
+      padding: 10px 20px;
+      background-color: $second-color;
+      text-decoration: none;
+      border-radius: 15px;
+      color: white;
+      font-family: Arial;
+      font-weight: bold;
+
+      &:hover {
+        color: $second-color;
+        background-color: white;
+      }
+    }
+  }
+}
+}
+
+.header-container {
   background-color: $first-color;
+}
+
+.home {
+  background-color: $background-color;
+
+}
+
+h2 {
+  color: $first-color;
 }
