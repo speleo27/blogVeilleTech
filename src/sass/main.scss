@@ -6,6 +6,8 @@ $first-color: #3204d9;
 $second-color: #21d904;
 $background-color: #f2f2f2;
 
+//font selection
+$my-font: Caveat;
 body {
   margin: 0;
   padding: 0;
@@ -13,64 +15,131 @@ body {
 
 h1,
 h2 {
-  font-family: Caveat;
+  font-family: $my-font;
 }
 
-h1 {
-  color: white;
-  margin-left: 250px;
-}
 
-h1,
-.hamburger {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+header{
 
-.hamburger {
-  margin-right: 250px;
-  padding-top: 10px;
-}
+  .header-container {
+    background-color: $first-color;
+  }
+  h1 {
+    color: white;
+    margin-left: 250px;
+  }
 
-#menu {
-  font-family: Arial;
-  color: white;
-  margin-right: 250px;
-ul {
-  display: grid;
-  gap: 15px;
-  li {
-    display: inline;
-    grid-row: 1;
+  h1,
+  .hamburger {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    a {
-      //border: solid 1px $second-color;
-      padding: 10px 20px;
-      background-color: $second-color;
-      text-decoration: none;
-      border-radius: 15px;
-      color: white;
-      font-family: Arial;
-      font-weight: bold;
+  .hamburger {
+    margin-right: 250px;
+    padding-top: 10px;
+  }
 
-      &:hover {
-        color: $second-color;
-        background-color: white;
+  #menu {
+    font-family: Arial;
+    color: white;
+    margin-right: 250px;
+
+    ul {
+      display: grid;
+      gap: 15px;
+
+      li {
+        display: inline;
+        grid-row: 1;
+
+        a {
+          //border: solid 1px $second-color;
+          padding: 10px 20px;
+          background-color: $second-color;
+          text-decoration: none;
+          border-radius: 15px;
+          color: white;
+          font-family: Arial;
+          font-weight: bold;
+
+          &:hover {
+            color: $second-color;
+            background-color: white;
+          }
+        }
       }
     }
   }
 }
-}
 
-.header-container {
-  background-color: $first-color;
-}
 
 .home {
   background-color: $background-color;
+  .home-container{
+    h2 {
+      color: $first-color;
+    }
+    .home-intro{
+      ul{
+        list-style: none;
+        li{
+        }
+      }
+    }
+  }
+
 
 }
 
-h2 {
-  color: $first-color;
+
+.card {
+  border: solid 1px $first-color;
+  box-shadow: 2px 2px 0px lightblue ;
+
+  .card-header {
+    background-color: $first-color;
+    font-family: $my-font;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .card-body{
+    border-top: solid 1px $first-color;
+    .card-title{
+      font-family: $my-font;
+      color:$second-color;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .card-text{
+      font-family: Arial;
+      font-size: 0.8rem;
+    }
+    .btn{
+      background-color: white;
+      color:$first-color;
+      border:solid 1px $first-color;
+      &:hover {
+        color: white;
+        background-color: $first-color;
+      }
+    }
+  }
+}
+
+.search{
+  .card{
+    .card-body{
+      .btn{
+        background-color: $first-color;
+        color: white;
+        &:hover{
+          color:$first-color;
+          background-color: white;
+        }
+      }
+    }
+  }
 }
