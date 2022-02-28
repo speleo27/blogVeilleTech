@@ -11,135 +11,238 @@ $my-font: Caveat;
 body {
   margin: 0;
   padding: 0;
-}
-
-h1,
-h2 {
-  font-family: $my-font;
-}
-
-
-header{
-
-  .header-container {
-    background-color: $first-color;
-  }
-  h1 {
-    color: white;
-    margin-left: 250px;
-  }
 
   h1,
-  .hamburger {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  h2 {
+    font-family: $my-font;
   }
 
-  .hamburger {
-    margin-right: 250px;
-    padding-top: 10px;
+  header {
+    .header-container {
+      background-color: $first-color;
+    }
+
+    h1 {
+      color: white;
+      margin-left: 250px;
+    }
+
+    h1,
+    .hamburger {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hamburger {
+      margin-right: 250px;
+      padding-top: 10px;
+    }
+
+    #menu {
+      font-family: Arial;
+      color: white;
+      margin-right: 250px;
+
+      ul {
+        display: grid;
+        gap: 15px;
+
+        li {
+          display: inline;
+          grid-row: 1;
+
+          a {
+            //border: solid 1px $second-color;
+            padding: 10px 20px;
+            background-color: $second-color;
+            text-decoration: none;
+            border-radius: 15px;
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+
+            &:hover {
+              color: $second-color;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
   }
 
-  #menu {
-    font-family: Arial;
-    color: white;
-    margin-right: 250px;
+  .home {
+    background-color: $background-color;
 
-    ul {
-      display: grid;
-      gap: 15px;
+    .home-container {
+      h2 {
+        color: $first-color;
+      }
 
-      li {
-        display: inline;
-        grid-row: 1;
+      .home-intro {
+        ul {
+          list-style: none;
 
-        a {
-          //border: solid 1px $second-color;
-          padding: 10px 20px;
-          background-color: $second-color;
-          text-decoration: none;
-          border-radius: 15px;
+          li {
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    border: solid 1px $first-color;
+    box-shadow: 2px 2px 0px lightblue;
+
+    .card-header {
+      background-color: $first-color;
+      font-family: $my-font;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .card-body {
+      border-top: solid 1px $first-color;
+
+      .card-title {
+        font-family: $my-font;
+        color: $second-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .card-text {
+        font-family: Arial;
+        font-size: 0.8rem;
+      }
+
+      .btn {
+        background-color: white;
+        color: $first-color;
+        border: solid 1px $first-color;
+
+        &:hover {
           color: white;
-          font-family: Arial;
-          font-weight: bold;
+          background-color: $first-color;
+        }
+      }
+    }
+  }
+
+  .search {
+    .card {
+      .card-body {
+        .btn {
+          background-color: $first-color;
+          color: white;
 
           &:hover {
-            color: $second-color;
+            color: $first-color;
             background-color: white;
           }
         }
       }
     }
   }
-}
 
-
-.home {
-  background-color: $background-color;
-  .home-container{
-    h2 {
-      color: $first-color;
-    }
-    .home-intro{
-      ul{
-        list-style: none;
-        li{
-        }
-      }
-    }
+  .logo-footer {
+    margin-bottom: 40px;
   }
 
-
-}
-
-
-.card {
-  border: solid 1px $first-color;
-  box-shadow: 2px 2px 0px lightblue ;
-
-  .card-header {
-    background-color: $first-color;
-    font-family: $my-font;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-  }
-
-  .card-body{
+  footer {
+    color: $first-color;
     border-top: solid 1px $first-color;
-    .card-title{
-      font-family: $my-font;
-      color:$second-color;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .card-text{
-      font-family: Arial;
-      font-size: 0.8rem;
-    }
-    .btn{
-      background-color: white;
-      color:$first-color;
-      border:solid 1px $first-color;
-      &:hover {
-        color: white;
-        background-color: $first-color;
-      }
-    }
+    box-shadow: 2px -2px 0px lightblue;
   }
-}
 
-.search{
-  .card{
-    .card-body{
-      .btn{
-        background-color: $first-color;
-        color: white;
-        &:hover{
-          color:$first-color;
-          background-color: white;
-        }
-      }
+  footer h6 {
+    font-family: "arial", serif;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  footer h6:after {
+    position: absolute;
+    content: "";
+    background: white;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+  }
+
+  .btn-footer {
+    color: $first-color;
+
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 43px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 47px;
+  }
+
+  .btn-footer:hover {
+    text-decoration: none;
+  }
+
+  .form-footer input[type="text"] {
+    border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+  }
+
+  ::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+  }
+
+  .form-footer input[type="button"] {
+    border: none;
+    background: $first-color;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+  }
+
+  .social .fa {
+    color: $first-color;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+  }
+
+  footer ul li {
+    list-style: none;
+    display: block;
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: $first-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $second-color;
+  }
+
+  .logo-part {
+    border-right: 1px solid $first-color;
+    height: 100%;
+
+    img {
+      width: 15%;
     }
   }
 }
