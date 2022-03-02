@@ -10413,7 +10413,12 @@ body header .header-container {
 }
 body header h1, body header .h1 {
   color: white;
-  margin-left: 250px;
+  margin-left: 50px;
+}
+@media screen and (min-width: 1024px) {
+  body header h1, body header .h1 {
+    margin-left: 250px;
+  }
 }
 body header h1, body header .h1,
 body header .hamburger {
@@ -10421,13 +10426,23 @@ body header .hamburger {
   margin-bottom: 20px;
 }
 body header .hamburger {
-  margin-right: 250px;
+  margin-right: 50px;
   padding-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  body header .hamburger {
+    margin-right: 250px;
+  }
 }
 body header #menu {
   font-family: Arial;
   color: white;
-  margin-right: 250px;
+  margin-right: 25px;
+}
+@media screen and (min-width: 1024px) {
+  body header #menu {
+    margin-right: 250px;
+  }
 }
 body header #menu ul {
   display: grid;
@@ -10492,13 +10507,24 @@ body .card .card-body .btn:hover {
   color: white;
   background-color: #3204d9;
 }
-body .search .card .card-body .btn {
-  background-color: #3204d9;
-  color: white;
+body .show-articles {
+  margin: auto;
 }
-body .search .card .card-body .btn:hover {
-  color: #3204d9;
-  background-color: white;
+body .search {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  body .search {
+    display: block;
+  }
+  body .search .card .card-body .btn {
+    background-color: #3204d9;
+    color: white;
+  }
+  body .search .card .card-body .btn:hover {
+    color: #3204d9;
+    background-color: white;
+  }
 }
 body .logo-footer {
   margin-bottom: 40px;
@@ -10506,7 +10532,7 @@ body .logo-footer {
 body footer {
   color: #3204d9;
   border-top: solid 1px #3204d9;
-  box-shadow: 2px -2px 0px lightblue;
+  box-shadow: -2px 0px lightblue;
 }
 body footer h6, body footer .h6 {
   font-family: "arial", serif;
@@ -10534,44 +10560,6 @@ body .btn-footer {
 body .btn-footer:hover {
   text-decoration: none;
 }
-body .form-footer input[type=text] {
-  border: none;
-  border-radius: 16px 0 0 16px;
-  outline: none;
-  padding-left: 10px;
-}
-body ::placeholder {
-  font-size: 10px;
-  padding-left: 10px;
-  font-style: italic;
-}
-body .form-footer input[type=button] {
-  border: none;
-  background: #3204d9;
-  margin-left: -5px;
-  color: #fff;
-  outline: none;
-  border-radius: 0 16px 16px 0;
-  padding: 2px 12px;
-}
-body .social .fa {
-  color: #3204d9;
-  font-size: 22px;
-  padding: 10px 15px;
-  background: #3c3c3c;
-}
-body footer ul li {
-  list-style: none;
-  display: block;
-}
-body footer ul {
-  padding-left: 0;
-}
-body footer ul li a {
-  text-decoration: none;
-  color: #3204d9;
-  text-decoration: none;
-}
 body a:hover {
   text-decoration: none;
   color: #21d904;
@@ -10579,8 +10567,22 @@ body a:hover {
 body .logo-part {
   border-right: 1px solid #3204d9;
   height: 100%;
+  margin-left: 25px;
+}
+@media screen and (min-width: 1024px) {
+  body .logo-part {
+    margin-left: 250px;
+  }
 }
 body .logo-part img {
   width: 15%;
+}
+body .logo-part .society-link {
+  margin-right: 25px;
+}
+@media screen and (min-width: 1024px) {
+  body .logo-part .society-link {
+    margin-right: 250px;
+  }
 }
 /*# sourceMappingURL=index.f7626f62.css.map */

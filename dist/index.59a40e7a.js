@@ -6357,17 +6357,20 @@ const hamburger = {
     Elem: document.getElementById("hamburger"),
     status: false
 };
-const menu = document.getElementById('menu');
+const menu = document.getElementById("menu");
+// hamburger.Elem.addEventListener("click", () => {
+//   hamburger.Elem.style.transform = hamburger.status
+//     ? "initial"
+//     : "rotate(90deg)";
+//   hamburger.status = !hamburger.status;
+//   menu.classList.toggle("d-none");
+// });
 hamburger.Elem.addEventListener("click", ()=>{
-    hamburger.Elem.style.transform = hamburger.status ? "rotate(0deg)" : "rotate(90deg)";
+    if (hamburger.status === true) hamburger.Elem.style.transform = "initial";
+    else hamburger.Elem.style.transform = "rotate(90deg)";
     hamburger.status = !hamburger.status;
     menu.classList.toggle("d-none");
-}); //  hamburger.Elem.addEventListener("click", ()=>{
- //  if(hamburger.status === true){
- // hamburger.style.transform= "";
- //  }else{
- //     hamburger.style.transform= "rotate(90deg)"};
- // });
+});
 
 },{}]},["iV45c","8lRBv"], "8lRBv", "parcelRequire08f4")
 
